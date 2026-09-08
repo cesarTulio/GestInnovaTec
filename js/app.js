@@ -608,6 +608,8 @@ const App = {
         setTimeout(() => {
             if (week.lab?.interactiveType === 'ansoff') this.setupAnsoffInteractive();
             if (week.lab?.interactiveType === 'hype-cycle') this.setupHypeCycleInteractive();
+            if (week.lab?.interactiveType === 'drag-drop' && week.lab.items) this.setupDragDropInteractive();
+            if (week.lab?.interactiveType === 's-curve') this.drawSCurve();
         }, 100);
     },
 
@@ -640,54 +642,71 @@ const App = {
                 </div>
             </div>
             <div id="dragFeedback" style="text-align:center;margin-top:1rem;font-weight:600;"></div>
-            <script>
-                (function(){
-                    const items = document.querySelectorAll('.drag-item');
-                    const zones = document.querySelectorAll('.drop-zone');
-                    let dragged = null;
-                    let score = 0;
-                    const total = items.length;
-
-                    items.forEach(item => {
-                        item.addEventListener('dragstart', e => {
-                            dragged = item;
-                            item.classList.add('dragging');
-                        });
-                        item.addEventListener('dragend', () => {
-                            item.classList.remove('dragging');
-                        });
-                    });
-
-                    zones.forEach(zone => {
-                        zone.addEventListener('dragover', e => {
-                            e.preventDefault();
-                            zone.classList.add('drag-over');
-                        });
-                        zone.addEventListener('dragleave', () => zone.classList.remove('drag-over'));
-                        zone.addEventListener('drop', e => {
-                            e.preventDefault();
-                            zone.classList.remove('drag-over');
-                            if (dragged) {
-                                const targetCat = zone.dataset.target;
-                                const itemCat = dragged.dataset.category;
-                                dragged.classList.remove('wrong');
-                                if (targetCat === itemCat) {
-                                    dragged.classList.add('placed');
-                                    zone.appendChild(dragged);
-                                    score++;
-                                } else {
-                                    dragged.classList.add('wrong');
-                                    setTimeout(() => dragged.classList.remove('wrong'), 600);
-                                }
-                                const fb = document.getElementById('dragFeedback');
-                                fb.textContent = score === total ? '¡Excelente! Todas las clasificaciones son correctas.' : score + ' de ' + total + ' correctas';
-                                fb.style.color = score === total ? 'var(--accent-green)' : 'var(--accent-amber)';
-                            }
-                        });
-                    });
-                })();
-            </script>
         `;
+    },
+
+    setupDragDropInteractive() {
+        const items = document.querySelectorAll('.drag-item');
+        const zones = document.querySelectorAll('.drop-zone');
+        let dragged = null;
+
+        const updateFeedback = () => {
+            const placed = document.querySelectorAll('.drag-item.placed');
+            const total = items.length;
+            const score = placed.length;
+            const fb = document.getElementById('dragFeedback');
+            if (!fb) return;
+            if (score === 0) {
+                fb.textContent = '';
+                return;
+            }
+            fb.textContent = score === total
+                ? '¡Excelente! Todas las clasificaciones son correctas.'
+                : score + ' de ' + total + ' correctas';
+            fb.style.color = score === total ? 'var(--accent-green)' : 'var(--accent-amber)';
+        };
+
+        items.forEach(item => {
+            item.addEventListener('dragstart', e => {
+                dragged = item;
+                item.classList.add('dragging');
+                if (e.dataTransfer) {
+                    e.dataTransfer.effectAllowed = 'move';
+                    e.dataTransfer.setData('text/plain', item.dataset.item || '');
+                }
+            });
+            item.addEventListener('dragend', () => {
+                item.classList.remove('dragging');
+                dragged = null;
+            });
+        });
+
+        zones.forEach(zone => {
+            zone.addEventListener('dragover', e => {
+                e.preventDefault();
+                if (e.dataTransfer) e.dataTransfer.dropEffect = 'move';
+                zone.classList.add('drag-over');
+            });
+            zone.addEventListener('dragleave', () => zone.classList.remove('drag-over'));
+            zone.addEventListener('drop', e => {
+                e.preventDefault();
+                zone.classList.remove('drag-over');
+                if (!dragged) return;
+                const targetCat = zone.dataset.target;
+                const itemCat = dragged.dataset.category;
+                dragged.classList.remove('wrong');
+                if (targetCat === itemCat) {
+                    dragged.classList.add('placed');
+                    dragged.setAttribute('draggable', 'false');
+                    zone.appendChild(dragged);
+                } else {
+                    const el = dragged;
+                    el.classList.add('wrong');
+                    setTimeout(() => el.classList.remove('wrong'), 600);
+                }
+                updateFeedback();
+            });
+        });
     },
 
     renderLeanCanvas(title) {
@@ -786,9 +805,6 @@ const App = {
                 </div>
             </div>
             <p id="scAdvice" style="margin-top:1rem;padding:1rem;background:var(--bg-tertiary);border-radius:var(--radius-md);color:var(--text-secondary);font-size:0.85rem;line-height:1.6;">Ajusta los controles para ver el punto de cruze entre una tecnología madura y una emergente.</p>
-            <script>
-                setTimeout(() => App.drawSCurve(), 200);
-            </script>
         `;
     },
 

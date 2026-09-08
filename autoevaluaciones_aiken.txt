@@ -1,0 +1,147 @@
+=== AUTOEVALUACION UNIDAD 1 ===
+
+Un laboratorio universitario desarrolla un algoritmo inédito de compresión de datos con una eficiencia del 99%. Sin embargo, el código permanece archivado en un servidor sin llegar a ningún producto comercial ni ser utilizado por usuarios. ¿Cómo se clasifica adecuadamente esta invención?
+A. Es una Innovación Disruptiva Comercializada
+B. Es una Invención Científico-Técnica (Aún no es Innovación)
+C. Es una Innovación Incremental de Mercado
+D. Es un Modelo de Negocio Abierto
+ANSWER: B
+
+La transición de la fotografía analógica basada en rollos de película de haluro de plata hacia la fotografía digital basada en sensores CCD/CMOS es un ejemplo clásico de:
+A. Innovación Incremental de Mantenimiento
+B. Innovación Disruptiva y Radical
+C. Mejora Continua de Procesos
+D. Innovación de Empaque Comercial
+ANSWER: B
+
+Cuando una tecnología de software se encuentra en la parte superior plana de su Curva en S (Fase de Madurez/Saturación), los incrementos adicionales en presupuesto de I+D generan:
+A. Rendimientos exponencialmente superiores.
+B. Mejoras de rendimiento marginales o decrecientes, señalando la necesidad de preparar la discontinuidad tecnológica.
+C. Un retorno automático del 1000% sobre la inversión.
+D. La eliminación inmediata de todos los competidores.
+ANSWER: B
+
+Mover una aplicación monolítica existente a una arquitectura de microservicios usando los mismos lenguajes de programación representa una:
+A. Innovación Arquitectónica
+B. Innovación de Mercadotecnia
+C. Patente de Invención Hardware
+D. Estrategia de Licenciamiento SaaS
+ANSWER: A
+
+En la práctica profesional del ingeniero de software, la gestión de la tecnología implica:
+A. Únicamente escribir líneas de código sin entender el mercado.
+B. Alinear el desarrollo de software con las necesidades estratégicas, operacionales y de competitividad del entorno empresarial.
+C. Evitar el uso de cualquier herramienta externa.
+D. Comprar únicamente equipos de hardware usados.
+ANSWER: B
+
+=== AUTOEVALUACION UNIDAD 2 ===
+
+En el modelo Stage-Gate de Robert Cooper, las Gate Reviews (Compuertas de Decisión) cumplen la función de:
+A. Aumentar el presupuesto sin revisar avances.
+B. Puntos de control donde la alta dirección evalúa la factibilidad y decide si el proyecto continua (Go), se cancela (Kill), se frena (Hold) o se repite (Recycle).
+C. Lanzar el producto a producción sin hacer pruebas.
+D. Eliminar el código fuente del proyecto.
+ANSWER: B
+
+Una empresa de desarrollo de software publica una API abierta para que programadores externos creen complementos en su tienda de aplicaciones. Esta práctica corresponde a:
+A. Innovación Cerrada Tradicional (Closed Innovation)
+B. Innovación Abierta Outbound / Plataforma de Ecosistema
+C. Infracción de Propiedad Intelectual
+D. Secreto Industrial Estricto
+ANSWER: B
+
+En la metodología Lean Startup, el propósito de construir un Producto Mínimo Viable (MVP) es:
+A. Lanzar un producto final perfecto con 100% de funciones.
+B. Iniciar el ciclo de aprendizaje validado con el mínimo esfuerzo e inversión posibles frente a clientes reales.
+C. Demostrar la capacidad del servidor de base de datos.
+D. Escribir la documentación completa de usuario de 500 páginas.
+ANSWER: B
+
+Según Peter Drucker, los Cambios en la Percepción del Consumidor representan:
+A. Una fuente externa de oportunidades de innovación basada en transformaciones sociales y culturales.
+B. Un problema técnico de compilación.
+C. Una violación de patentes de software.
+D. Un error en la base de datos NoSQL.
+ANSWER: A
+
+La fase inicial de Empatizar en Design Thinking busca:
+A. Programar la base de datos inmediatamente.
+B. Comprender profundamente las necesidades, dolores y motivaciones reales de los usuarios finales en su contexto.
+C. Definir el costo de la licencia de software.
+D. Vender el producto antes de diseñarlo.
+ANSWER: B
+
+=== AUTOEVALUACION UNIDAD 3 ===
+
+En la industria de aplicaciones móviles de software, la presencia de plataformas Low-Code/No-Code que permiten a no desarrolladores crear apps representa la fuerza de:
+A. Poder de negociación de los proveedores de hardware
+B. Amenaza de Productos o Servicios Sustitutos
+C. Rivalidad entre desarrolladores de Java únicamente
+D. Barrera de salida gubernamental
+ANSWER: B
+
+Si una empresa de software decide vender su software CRM existente en un nuevo país donde no operaba anteriormente, está aplicando la estrategia de:
+A. Penetración de Mercado
+B. Desarrollo de Mercado
+C. Desarrollo de Producto
+D. Diversificación Conglomerada
+ANSWER: B
+
+En Colombia, la protección del Código Fuente de un programa de computador se otorga automáticamente mediante el régimen de:
+A. Patente de Modelo de Utilidad
+B. Derechos de Autor (Obra Literaria e Inmaterial)
+C. Marca Comercial Registrada
+D. Licencia Creative Commons sin registro
+ANSWER: B
+
+Un sistema informático cuya falla paraliza de inmediato las operaciones diarias de la empresa y cuyos nuevos desarrollos son críticos para la estrategia futura se ubica en la categoría de:
+A. Sistema de Apoyo / Soporte
+B. Sistema Estratégico
+C. Sistema Desconectado
+D. Sistema de Auditoría Externa
+ANSWER: B
+
+Una empresa de desarrollo adopta una estrategia de I+D Seguidor Rápido (Fast Follower). Esto significa que:
+A. Es la primera en inventar la tecnología asumiendo todo el costo de investigación.
+B. Monitorea al líder del mercado, aprende de sus errores y lanza rápidamente una versión mejorada o más competitiva.
+C. No invierte en ninguna tecnología.
+D. Cierra sus operaciones de desarrollo.
+ANSWER: B
+
+=== AUTOEVALUACION UNIDAD 4 ===
+
+Al construir una ecuación de búsqueda de patentes en Google Patents, la inclusión del código CPC (Clasificación Cooperativa de Patentes) permite:
+A. Aumentar el ruido de la búsqueda trayendo millones de documentos irrelevantes.
+B. Acotar los resultados específicamente a la familia tecnológica y campo de aplicación exacto del invento independientemente del idioma.
+C. Traducir el código a lenguaje C++.
+D. Borrar las patentes encontradas.
+ANSWER: B
+
+Una tecnología emergente se encuentra en el Abismo de Desilusión (Trough of Disillusionment). Esto indica que:
+A. La tecnología ha desaparecido para siempre.
+B. El entusiasmo inicial disminuyó al enfrentar dificultades de implementación, pero las empresas pioneras están refinando los verdaderos casos de uso.
+C. El 100% de la población mundial la utiliza a diario.
+D. Es el momento de comprar la empresa inventora.
+ANSWER: B
+
+El estudio de Libertad de Operación (FTO) se ejecuta antes de lanzar un producto de software para:
+A. Garantizar que la solución no infrinja patentes vigentes de terceros en los mercados donde operará.
+B. Inhabilitar la conexión a internet de los servidores.
+C. Aumentar los impuestos de importación.
+D. Eliminar el código fuente.
+ANSWER: A
+
+El ciclo de Vigilancia Tecnológica según la norma UNE 166006 inicia con:
+A. La redacción del boletín final.
+B. La identificación de los Factores Críticos de Vigilancia (FCV) y las necesidades de información de la organización.
+C. La compra de servidores físicos.
+D. La cancelación de la suscripción a bases de datos.
+ANSWER: B
+
+La diferencia clave entre Vigilancia Tecnológica (VT) e Inteligencia Competitiva (IC) radica en que:
+A. VT capta y analiza información técnica, mientras la IC transforma esa información en decisiones estratégicas de negocio.
+B. Son exactamente lo mismo sin diferencia alguna.
+C. VT es solo para hardware y IC es solo para software.
+D. IC es ilegal en todos los países.
+ANSWER: A
